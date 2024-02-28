@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Universal Declaration of Digital Human Rights</title>
+  </head>
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap);
+    @import url(https://fonts.googleapis.com/css2?family=Noto+Sans);
+    @import url(https://fonts.googleapis.com/css2?family=Noto+Serif);
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 0;
+      background: url(paper.jpg);
+      /* background-size: 200px; */
+      font-family: "Noto Serif", sans-serif;
+    }
+
+    header {
+      margin: 2vw 0 0 5vw;
+      width: 1020px;
+      line-height: 80px;
+      font-size: 48px;
+    }
+
+    .title {
+      margin-bottom: 60vw;
+      color: #395c90;
+      top: 0;
+      left: 0;
+      font-size: 75px;
+      width: 40vw;
+    }
+
+    .preamble {
+      width: 1020px;
+      margin: 0 auto 80px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      font-style: italic;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+
+    .circle a {
+      position: absolute;
+      font-size: 2.5vw;
+      color: white;
+      text-decoration: none;
+      top: 20px;
+    }
+
+    .sections img {
+      position: absolute;
+      width: 20vw;
+      height: 20vw;
+      top: 35vw;
+      right: 5vw;
+      z-index: 7;
+    }
+
+    .access {
+      background-color: #17263b;
+      width: 30vw;
+      height: 30vw;
+      top: 30vw;
+      right: 0;
+      z-index: 6;
+    }
+
+    .agency {
+      background-color: #5b92e5;
+      width: 40vw;
+      height: 40vw;
+      top: 25vw;
+      right: -5vw;
+      z-index: 5;
+    }
+
+    .governance {
+      background-color: #17263b;
+      width: 50vw;
+      height: 50vw;
+      top: 20vw;
+      right: -10vw;
+      z-index: 4;
+    }
+
+    .identity {
+      background-color: #5b92e5;
+      width: 60vw;
+      height: 60vw;
+      top: 15vw;
+      right: -15vw;
+      z-index: 3;
+    }
+
+    .work {
+      background-color: #17263b;
+      width: 70vw;
+      height: 70vw;
+      top: 10vw;
+      right: -20vw;
+      z-index: 2;
+    }
+
+    .property {
+      background-color: #5b92e5;
+      width: 80vw;
+      height: 80vw;
+      top: 5vw;
+      right: -25vw;
+      z-index: 1;
+    }
+
+    .blue-box {
+      background-color: #395c90;
+      color: white;
+      text-transform: uppercase;
+      font-style: normal;
+      margin-top: 20px;
+      padding: 2px 12px;
+    }
+
+    .collapsible {
+      cursor: pointer;
+      padding: 7px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .caret {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: block;
+      overflow: hidden;
+      background-color: #FFFFFF;
+    }
+
+    svg {
+      position: absolute;
+      top: 10vw;
+      right: -10vw;
+      z-index: 10;
+      width: 80%;
+      height: auto;
+      border: 1px solid black;
+    }
+
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 40px;
+      fill: white;
+    }
+
+    [id^="curve"] {
+      display: none;
+    }
+  </style>
+  <body>
+    <p></p>
+
+    <header>
+      <!-- <img src="UN-logo.png" alt="the UN Logo"> -->
+      <div class="title">
+        <i>The</i> <br> <b>Universal Declaration</b> <i>of</i> <b>Digital Human Rights</b>
+      </div>
+    </header>
+
+    <div class="sections">
+      <div class="circle access">
+<!--         <a href="#">Access</a> -->
+      </div>
+      <div class="circle agency"></div>
+      <div class="circle governance"></div>
+      <div class="circle identity"></div>
+      <div class="circle work"></div>
+      <div class="circle property"></div>
+      <img src="UN-logo.png" alt="the UN Logo">
+    </div>
+
+    <svg viewBox="0 0 800 600">
+      <!-- Define paths for text to follow -->
+      <path id="curve1" d="M100,100 A150,150 0 0,1 370,200" />
+      <path id="curve2" d="M238,200 A150,150 0 0,1 680,-149" />
+      <path id="curve3" d="M150,350 A150,150 0 0,1 450,350" />
+      <path id="curve4" d="M50,400 A150,150 0 0,1 350,400" />
+      <path id="curve5" d="M250,400 A150,150 0 0,1 550,400" />
+      <path id="curve6" d="M450,300 A150,150 0 0,1 750,300" />
+
+      <!-- Add text along the paths -->
+      <a href="#">
+        <text style="transform: translate(340px, 200px)">
+          <textPath href="#curve1" startOffset="10%">access</textPath>
+        </text>
+      </a>
+      
+      <a href="#">
+      <text style="transform: translate(200px, 283px)">
+        <textPath href="#curve2" startOffset="1%">agency</textPath>
+      </text>
+      </a>
+      
+      <a href="#">
+      <text style="transform: translate(0px, 0px)">
+        <textPath href="#curve3" startOffset="25%">governance</textPath>
+      </text>
+      </a>
+    
+      <a href="#">
+      <text style="transform: translate(0px, 0px)">
+        <textPath href="#curve4" startOffset="25%">identity</textPath>
+      </text>
+      </a>
+      
+      <a href="#">
+      <text style="transform: translate(0px, 0px)">
+        <textPath href="#curve5" startOffset="25%">work</textPath>
+      </text>
+      </a>
+      
+      <a href="#">
+      <text style="transform: translate(0px, 0px)">
+        <textPath href="#curve6" startOffset="25%">property</textPath>
+      </text>
+      </a>
+    </svg>
+
+    <section class="preamble">
+      <div>
+        <button type="button" class="blue-box collapsible">Who are "we"? <p class="caret">▼</p></button>
+        <div class="content">
+          <p>We are a group of students at the University of Chicago enrolled in a class called Digitizing Human Rights, where we have been asked to reimagine the Universal Declaration of Human Rights for our digital age. We meet in a classroom on the South Side of Chicago within a Western democracy. We represent a variety of nationalities and disciplines. Having grown up in a generation that has navigated rapidly developing technology, we come together out of a concern for the future of human rights. From our perspective, the future demands a more comprehensive system of rights. </p>
+        </div>
+
+
+        <button class="blue-box collapsible">Who are we addressing? <p class="caret">▼</p></button>
+        <div class="content">
+          <p> We call on all agents of digital change (current and future) to:
+            1. recognize technology as a vast and borderless domain
+            2. move towards a common understanding and respect for digital human rights
+            3. commit to revisiting and revising this document as an adaptable framework
+          </p>
+        </div>
+
+
+        <button class="blue-box collapsible">On whose behalf? <p class="caret">▼</p></button>
+        <div class="content">
+          <p>We proceed on behalf of multiple units of society that come together to make up the human family to reinforce equal dignity and respect for all within a technologically progressing world to ensure a harmonious and continued existence.</p>
+        </div>
+
+
+      </div>
+
+      <div>
+
+        <button class="blue-box collapsible">For what purpose? <p class="caret">▼</p></button>
+        <div class="content">
+          <p>The advent of the digital age necessitates a new Declaration of Digital Human Rights, as the exponential growth of technology and its integration into daily life has rapidly outpaced our traditional institutions and structures of governance. This new era demands a reevaluation of traditional concepts such as privacy, individual agency, as well as the proper role of government and its relationship with the people in the context of the digital world. It is imperative to establish a set of human rights tailored to this digital landscape, encompassing transparency, self-determination, and accountability, to safeguard the welfare of humanity. In the face of evolving digital realities, these frameworks must be revisited and adapted to ensure they remain relevant and effective in protecting rights and freedoms within an increasingly digital society. The creation of a digital DHR is not just an adaptation to modern times; it is a crucial step towards ensuring that our rights evolve alongside our technology, enabling a future where digital advancements and human rights coexist in harmony.</p>
+        </div>
+
+        <button class="blue-box collapsible">With what effect? <p class="caret">▼</p></button>
+        <div class="content">
+          <p>We have created this document with the intended effect of addressing new media concerns regarding the addition, maintenance, and expansion of human rights that will hopefully be applicable today and in the future, as technology and society continue to evolve. With the effect of encouraging governments, educational institutions, corporations, and individuals to think through these concerns and affect change through law and policy that is in-line with the priorities of the UDHR. With the effect of opening the doors for future iteration by establishing new goals and the vocabulary to address said goals, therefore strengthening a shared sense of accountability. With the effect of promoting individual education, public awareness, and accessibility on the Internet, particularly in regards to technology-related issues and digital literacy. Consequently, we aim to shape the trajectory of the use and innovation of technology, including AI, to prevent immoral use that contributes to the oppression of any human being.</p>
+        </div>
+
+        <button class="blue-box collapsible">On what authority? <p class="caret">▼</p> </button>
+        <div class="content">
+          <p>We speak as individuals who have formed a small community out of concern about the future of our human rights in the face of technological advances. We do not claim the authority to give orders, make prescriptions, or enforce adherence. We claim authority as individuals who have discussed, challenged, and agreed upon rights that are fundamental to all users of technology and thus request the willing adherence and engagement with these rights by the reader.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+      let coll = document.getElementsByClassName("collapsible");
+      let i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          let content = this.nextElementSibling;
+          if (content.style.display === "none") {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
